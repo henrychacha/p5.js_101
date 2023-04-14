@@ -1,7 +1,7 @@
 let x = 0 
 
 function setup(){
-    // The setup() block runs once, and is typically used for initialization, or for creating a program that does not need a loop running code repeatedly. 
+    // The setup() block runs once, and is typically used for initialization, or for creating a program that does not need a loop running code repeatedly. only conduct once
 
     // By default, the drawing canvas has a size of 100x100. If you want to set a custom size, use the createCanvas() function. It is a good idea to always make this the first line in setup(). The code below sets the canvas to size 600x400:
 
@@ -14,6 +14,9 @@ function setup(){
 
 function draw(){
     // The draw() block runs repeatedly, and is used for animation.
+    // a loop. Conduct forever. This flow is aimed for an animation program or a graphics program
+    // The repetition rate is locked to 60 frames per second.
+    // you won't see the internal changes but only see the end result because p5.js and other animation systems will display the last result(the last line code in function) in the draw function even thougt it conduct repeatedly.
     ellipse(x, height/2, 20, 20);
     x = x + 1
 }
