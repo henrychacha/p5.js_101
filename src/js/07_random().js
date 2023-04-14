@@ -1,17 +1,33 @@
+let squareSize;
+let linewidth = 4;
+let x, y, r, g, b, a;
 
-let circleX = 100;
-let changesA = 1;
 function setup(){
-    createCanvas(400, 300);
+    createCanvas(windowWidth, windowHeight);//
     background(0); 
+
+    squareSize = random(50, 100) // random function isn't accessible outside these two functions
     
 }
 function draw(){
+    linewidth = random(4, 28);
+    squareSize = random(50,250);
+    x = random(width);//
+    y = random(height);//
+    r = random(255);//
+    g= random(0,255);//
+    b= random(0,255);//
+    a= random(0,255);//
+    
+    rectMode(CENTER);
+    strokeWeight(linewidth)
+    stroke(0,0,255,10)
+    fill(0,255,0,10)
+    rect(100,100,squareSize,squareSize);
+    square(200,150,squareSize)
 
-    fill(255,50);
-    circle(mouseX,mouseY,10);
-    circle(circleX,150,changesA);
-
+    fill(r,g,b,a)
+    circle(x,y,10)
 }
 
 function mousePressed(){
