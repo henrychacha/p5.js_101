@@ -19,4 +19,5 @@ function draw(){
     // you won't see the internal changes but only see the end result because p5.js and other animation systems will display the last result(the last line code in function) in the draw function even thougt it conduct repeatedly.
     ellipse(x, height/2, 20, 20);
     x = x + 1
+    // where the window/canvas updated, when all code are finished, then, repeat draw function
 }
