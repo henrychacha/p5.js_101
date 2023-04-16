@@ -3,15 +3,6 @@
   template
   class
 
-  assign:bubble
+  assign: full of random bubble
 */
 
-function setup(){
-createCanvas(windowWidth, windowHeight);
-}
-
-function draw(){
-
-}
-
-function mousePressed(){}
